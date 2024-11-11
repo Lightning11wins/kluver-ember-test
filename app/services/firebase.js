@@ -1,17 +1,15 @@
 import Service from '@ember/service';
-import { initializeApp } from 'firebase/app';
-import { getFirestore } from 'firebase/firestore';
+import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyDpITRVoa5AOMiY4Yi-a7Ba8QveOs_0gek',
-  authDomain: 'f2024-ongoing-example.firebaseapp.com',
-  projectId: 'f2024-ongoing-example',
-  storageBucket: 'f2024-ongoing-example.firebasestorage.app',
-  messagingSenderId: '595362775097',
-  appId: '1:595362775097:web:15cdb97ef93c4f42b58de8',
+  apiKey: "AIzaSyDJrxStg4D4V8vwtbwwexzl5ul_bwYJ1a8",
+  authDomain: "test-1d65a.firebaseapp.com",
+  projectId: "test-1d65a",
+  storageBucket: "test-1d65a.firebasestorage.app",
+  messagingSenderId: "177335598150",
+  appId: "1:177335598150:web:a82e167e83ec16d48c1e47"
 };
 
 export default class FirebaseService extends Service {
-  app = initializeApp(firebaseConfig);
-  db = getFirestore(this.app);
+    app = initializeApp(firebaseConfig);
 }
